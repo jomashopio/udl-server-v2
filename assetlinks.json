@@ -1,0 +1,28 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jomashop.app",
+      "sha256_cert_fingerprints": [
+        "E9:81:AF:BB:84:38:C2:0F:4E:06:6B:33:1C:E8:EA:6B:FD:C2:94:96:4E:A8:4D:48:DF:A5:F5:DE:F9:93:65:A5"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jomashop_staging.hoth.app",
+      "sha256_cert_fingerprints": [
+        "E9:81:AF:BB:84:38:C2:0F:4E:06:6B:33:1C:E8:EA:6B:FD:C2:94:96:4E:A8:4D:48:DF:A5:F5:DE:F9:93:65:A5"
+      ]
+    }
+  }
+]
