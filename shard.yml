@@ -1,8 +1,9 @@
-name: UDL Server
-version: 1.0.0.beta2
+name: Jomashop Universal Deep Link Server
+version: 1.0.0
 
 authors:
-  - Fernando Valverde <fernando@fdo.cr>
+  - Fernando Valverde <https://github.com/fdocr>
+  - Jomashop <https://www.jomashop.com>
 
 targets:
   udl-server:
