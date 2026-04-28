@@ -1,0 +1,25 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "2R28X9XZ2X.com.jomashop.ios",
+          "2R28X9XZ2X.com.jomashop-staging.hoth"
+        ],
+        "components": [
+          {
+            "/": "*",
+            "comment": "Matches all URLs"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+        "apps": [
+            "2R28X9XZ2X.com.jomashop.ios",
+            "2R28X9XZ2X.com.jomashop-staging.hoth"
+        ]
+    }
+}
