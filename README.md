@@ -10,35 +10,16 @@ Bounces traffic through a separate domain so iOS Universal Links and Android App
 
 ## Usage
 
-Redirect through the UDL server with the `r` query parameter:
-
-```
-https://your-udl-domain.com/?r=https://www.jomashop.com/product-page
-```
-
-### Default destination
-
-If `DEFAULT_DESTINATION` is set and no `r` param is provided:
+All paths are forwarded to `DEFAULT_DESTINATION`:
 
 - `https://your-udl-domain.com/` → redirects to `DEFAULT_DESTINATION`
-- `https://your-udl-domain.com/watches/rolex` → redirects to `DEFAULT_DESTINATION + /watches/rolex`
-
-### Whitelist destinations
-
-`WHITELIST_DESTINATIONS` restricts redirect targets to approved hosts (comma-separated):
-
-```
-WHITELIST_DESTINATIONS=www.jomashop.com,jomashop.com
-```
-
-`DEFAULT_DESTINATION` host is always implicitly allowed.
+- `https://your-udl-domain.com/watches/rolex` → redirects to `DEFAULT_DESTINATION/watches/rolex`
 
 ## Environment Variables
 
 | Variable | Description | Example |
 |---|---|---|
-| `DEFAULT_DESTINATION` | Fallback redirect when no `r` param | `https://www.jomashop.com` |
-| `WHITELIST_DESTINATIONS` | Comma-separated allowed redirect hosts | `www.jomashop.com,jomashop.com` |
+| `DEFAULT_DESTINATION` | Target site for all redirects | `https://www.jomashop.com` |
 | `PORT` | Server port (default `3000`) | `3000` |
 
 ## Performance
