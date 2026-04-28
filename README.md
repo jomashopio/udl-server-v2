@@ -12,8 +12,8 @@ Bounces traffic through a separate domain so iOS Universal Links and Android App
 
 All paths are forwarded to `DEFAULT_DESTINATION`:
 
-- `https://your-udl-domain.com/` → redirects to `DEFAULT_DESTINATION`
-- `https://your-udl-domain.com/watches/rolex` → redirects to `DEFAULT_DESTINATION/watches/rolex`
+- `https://udl.jomashop.com/` → redirects to `DEFAULT_DESTINATION`
+- `https://udl.jomashop.com/watches/rolex` → redirects to `DEFAULT_DESTINATION/watches/rolex`
 
 ## Environment Variables
 
