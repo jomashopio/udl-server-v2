@@ -105,7 +105,7 @@ describe "UDL Server" do
 
         response.status_code.should eq(200)
         response.body.should contain("Something went wrong")
-        response.body.should contain("Check out the <a href=\"https://github.com/fdocr/udl-server#Troubleshooting\">README</a> for more details")
+        response.body.should contain("Check the server configuration for more details")
       end
     end
 
@@ -115,7 +115,7 @@ describe "UDL Server" do
 
         response.status_code.should eq(200)
         response.body.should contain("Something went wrong")
-        response.body.should contain("Check out the <a href=\"https://github.com/fdocr/udl-server#Troubleshooting\">README</a> for more details")
+        response.body.should contain("Check the server configuration for more details")
       end
     end
 
@@ -134,7 +134,7 @@ describe "UDL Server" do
 
         response.status_code.should eq(200)
         response.body.should contain("Something went wrong")
-        response.body.should contain("Check out the <a href=\"https://github.com/fdocr/udl-server#Troubleshooting\">README</a> for more details")
+        response.body.should contain("Check the server configuration for more details")
       end
     end
   end

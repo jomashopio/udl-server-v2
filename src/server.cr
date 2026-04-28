@@ -5,10 +5,6 @@ require "dotenv"
 Dotenv.load if (Kemal.config.env == "development") && File.exists?(".env")
 Dotenv.load(path: ".env.test") if Kemal.config.env == "test"
 
-require "../config/**"
-
-add_handler Defense::Handler.new unless ENV["DISABLE_DEFENSE"]?.presence
-
 error_context = "Use the root path instead, i.e. `/?r=TARGET_URL_HERE`"
 
 get "/" do |env|

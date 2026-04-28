@@ -12,14 +12,9 @@ jobs:
   tests:
     name: Tests
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        safelist:
-          - "fdo.cr github.com"
-          - ""
     steps:
       - name: Download source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Crystal
         uses: crystal-lang/install-crystal@v1
@@ -27,7 +22,7 @@ jobs:
           crystal: 1.16.2
 
       - name: Cache shards
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: lib
           key: ${{ runner.os }}-shards-${{ hashFiles('**/shard.lock') }}
@@ -38,5 +33,3 @@ jobs:
 
       - name: Run tests
         run: KEMAL_ENV=test crystal spec --verbose
-        env:
-          SAFELIST: ${{ matrix.safelist }}

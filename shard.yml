@@ -13,8 +13,6 @@ dependencies:
     github: kemalcr/kemal
   spec-kemal:
     github: kemalcr/spec-kemal
-  defense:
-    github: defense-cr/defense
   dotenv:
     github: drum445/dotenv
     version: ~> 0.5.0
@@ -25,5 +23,3 @@ development_dependencies:
     version: ~> 1.5.0
 
 crystal: 1.16.2
-
-license: MIT

@@ -8,14 +8,6 @@ shards:
     git: https://github.com/sija/backtracer.cr.git
     version: 1.2.4
 
-  db:
-    git: https://github.com/crystal-lang/crystal-db.git
-    version: 0.13.1
-
-  defense:
-    git: https://github.com/defense-cr/defense.git
-    version: 0.5.1
-
   dotenv:
     git: https://github.com/drum445/dotenv.git
     version: 0.5.0
@@ -32,11 +24,6 @@ shards:
     git: https://github.com/luislavena/radix.git
     version: 0.4.1
 
-  redis:
-    git: https://github.com/jgaskins/redis.git
-    version: 0.8.1
-
   spec-kemal:
     git: https://github.com/kemalcr/spec-kemal.git
     version: 1.0.0
-
